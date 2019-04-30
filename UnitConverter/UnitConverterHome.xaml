@@ -1,0 +1,25 @@
+﻿<Page x:Class="UnitConverter.UnitConverterHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UnitConverter"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UnitConverterHome">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="convertimage.jpg"/>
+        </Grid.Background>
+
+        <ComboBox Name="unitComboBox" FontSize="16" FontFamily="MS Mincho" HorizontalAlignment="Left" Margin="500,200,0,0" VerticalAlignment="Top" Width="220" Height="25">
+            <ComboBoxItem FontSize="16" FontFamily="MS Mincho" Content="Температура"/>
+            <ComboBoxItem FontSize="16" FontFamily="MS Mincho" Content="Дължина"/>
+            <ComboBoxItem FontSize="16" FontFamily="MS Mincho" Content="Маса"/>
+        </ComboBox>
+        <Button x:Name="homeForwardBtn" FontSize="16" FontFamily="Arial Rounded MT Bold" Content="Напред" HorizontalAlignment="Left" Margin="600,320,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="homeForwardBtn_Click"/>
+        <Label x:Name="homeLabel" Content="Избор на величина:" HorizontalAlignment="Left" Margin="500,160,0,0" VerticalAlignment="Top" Width="250" Height="30" FontSize="12" Foreground="#FFFFFDFD" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Бързо конвертиране" HorizontalAlignment="Left" Margin="375,33,0,0" VerticalAlignment="Top" Foreground="White" Height="83" Width="415" FontSize="36" FontFamily="Century Gothic"/>
+    </Grid>
+</Page>
